@@ -1,8 +1,8 @@
 <?php
-namespace Excellence\Table\Controller\Index;
+namespace Excellence\Hello\Controller\Hello;
  
  
-class Index extends \Magento\Framework\App\Action\Action
+class World extends \Magento\Framework\App\Action\Action
 {
     protected $resultPageFactory;
     public function __construct(
@@ -16,10 +16,5 @@ class Index extends \Magento\Framework\App\Action\Action
     public function execute()
     {
         return $this->resultPageFactory->create(); 
-        $test->setName('Shubham Mathur');
-        $test->setEmail('shubham@excellencetechnologies.in');
-        $test->save();
-        $test->load(1); 
-        print_r($test->getData());
     } 
 }
