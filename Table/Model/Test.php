@@ -13,14 +13,6 @@ class Test extends \Magento\Framework\Model\AbstractModel implements TestInterfa
     {
         return [self::CACHE_TAG . '_' . $this->getData('table_id')];
     }
-    public function loadByName($Name){
-        if(!$Name){
-            $Name= $this->getName();
-            //random data logic. can be much more complex.
-            //this is just example
-        }
-        $id = $this->getResource()->loadByName($Name);
-        return $this->load($id);
-    }
+   
 
 }
